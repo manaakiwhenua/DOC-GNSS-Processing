@@ -152,7 +152,7 @@ GetPosStats = function(POS_Filename, target_CRS = 2193){
   POS_data_sf = POS_data %>% 
     st_as_sf(coords = c("Lon_DD", "Lat_DD"), crs = 4326) 
   
-  #transform the coordinates to the chose target CRS
+  #transform the coordinates to the chosen target CRS
   POS_data_sf_NZTM = POS_data_sf %>% 
     st_transform(crs = target_CRS)
   
