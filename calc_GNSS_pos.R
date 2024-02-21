@@ -53,6 +53,7 @@ if (!require("mapview", character.only = TRUE)) {
 } else {
   # If already installed, just load the package
   library("mapview")
+  
 }
 
 
@@ -120,7 +121,8 @@ procpos = function(FileName = NULL, writeResults = T, showMap = F){
     POS_STATS_2_write_sf = POS_STATS_2_write %>% 
       st_as_sf(coords = c("meanX", "meanY"), crs = 2193)
     
-    mapview(POS_STATS_2_write_sf)
+    mapviewOptions(basemaps = c("Esri.WorldImagery"))
+    mapview(POS_STATS_2_write_sf, color = "red", col.region = "yellow")
     
   }
   
