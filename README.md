@@ -29,7 +29,7 @@ procpos will then :
 (3) If requested, procpos will also produce a zoomable map indicating the location of the solution
 
 procpos can also ingest a specified *.POS file, instead of prompting the user to select.
-This can be done, by setting the first argument to a character string of the file path,
+This can be done by setting the first argument to a character string of the file path,
 eg 
 ```
 procpos(FileName = "C:/Users/Myname/data/FINAL_SOLUTIONS/JVD-OCC7-P2-PPK-R10.POS")
